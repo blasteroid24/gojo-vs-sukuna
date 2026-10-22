@@ -1,0 +1,7 @@
+node_modules
+dist
+.DS_Store
+*.local
+
+# Raw source frames (230 MB of PNG). Optimized sets live in public/frames*.
+/frames

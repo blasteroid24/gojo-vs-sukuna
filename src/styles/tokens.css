@@ -1,0 +1,56 @@
+@font-face {
+  font-family: 'Anton';
+  src: url('/fonts/anton.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('/fonts/inter-var.woff2') format('woff2-variations'), url('/fonts/inter-var.woff2') format('woff2');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Fallback metrics tuned so the swap to Anton doesn't reflow the hero much. */
+@font-face {
+  font-family: 'Anton Fallback';
+  src: local('Impact'), local('Arial Narrow Bold'), local('Arial');
+  size-adjust: 96%;
+  ascent-override: 117%;
+}
+
+:root {
+  /* Palette sampled from the frames: Shibuya night, Infinity blue, Reversal red. */
+  --bg: #05070d;
+  --bg-raise: #0a1020;
+  --night: #132c50;
+  --ink: #f3f5fc;
+  --ink-dim: rgb(226 232 248 / 0.74);
+  --ink-faint: rgb(226 232 248 / 0.42);
+
+  --blue: #4c9bff; /* lifted from #0971d0 for contrast on dark */
+  --blue-deep: #0b2a5c;
+  --violet: #8b84ff; /* lifted from #2e3769 */
+  --red: #ff4a4f; /* lifted from #ae2e31 */
+  --red-deep: #6f0c11;
+
+  --font-display: 'Anton', 'Anton Fallback', Impact, 'Arial Narrow', sans-serif;
+  --font-sans: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+
+  --gutter: clamp(16px, 3.2vw, 48px);
+  --nav-h: 72px;
+  --rail-space: 36px;
+
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+@media (max-width: 767.98px) {
+  :root {
+    --nav-h: 56px;
+    --rail-space: 0px;
+  }
+}

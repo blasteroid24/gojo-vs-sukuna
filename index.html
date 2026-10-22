@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en" class="is-loading">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Gojo vs Sukuna: The Strongest vs The King of Curses</title>
+    <meta
+      name="description"
+      content="A scroll-driven fan tribute to the Jujutsu Kaisen fight between Satoru Gojo, the Honored One, and Ryomen Sukuna, the King of Curses."
+    />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <meta name="theme-color" content="#05070d" />
+    <meta name="color-scheme" content="dark" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Gojo vs Sukuna: The Strongest vs The King of Curses" />
+    <meta property="og:description" content="A scroll-driven Jujutsu Kaisen fan tribute. Scroll to witness the clash." />
+    <meta property="og:image" content="/og.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="/og.jpg" />
+
+    <link rel="preload" href="/fonts/anton.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/fonts/inter-var.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/frames/frame_0001.webp" as="fetch" crossorigin media="(min-width: 768px)" />
+    <link rel="preload" href="/frames-mobile/frame_0001.webp" as="fetch" crossorigin media="(max-width: 767.98px)" />
+  </head>
+  <body>
+    <a class="skip-link" href="#credits">Skip to credits</a>
+
+    <div
+      class="preloader"
+      id="preloader"
+      role="progressbar"
+      aria-label="Loading animation frames"
+      aria-valuemin="0"
+      aria-valuemax="100"
+      aria-valuenow="0"
+    >
+      <div class="preloader__inner">
+        <p class="preloader__eyebrow">Domain loading</p>
+        <p class="preloader__count"><span data-count>0</span><span class="preloader__pct">%</span></p>
+        <div class="preloader__track"><span class="preloader__bar" data-bar></span></div>
+        <p class="preloader__title">Gojo <em>vs</em> Sukuna</p>
+      </div>
+    </div>
+
+    <header class="nav" data-nav>
+      <a class="nav__logo" href="#top">
+        <span>Gojo</span><span class="nav__x" aria-hidden="true">×</span><span>Sukuna</span>
+      </a>
+      <p class="nav__chapter" aria-live="polite">
+        <span class="nav__index" data-chapter-index>01 / 06</span>
+        <span class="nav__label" data-chapter-label>Prologue</span>
+      </p>
+    </header>
+
+    <nav class="rail" data-rail aria-label="Chapters">
+      <div class="rail__track" aria-hidden="true">
+        <span class="rail__buffer" data-rail-buffer></span>
+        <span class="rail__fill" data-rail-fill></span>
+      </div>
+      <ol class="rail__ticks" data-rail-ticks></ol>
+    </nav>
+
+    <main id="top">
+      <section class="sequence" id="sequence" aria-label="Scroll-driven animation of the fight">
+        <div class="stage">
+          <canvas
+            id="scene"
+            class="stage__canvas"
+            role="img"
+            aria-label="Animated sequence: Satoru Gojo and Ryomen Sukuna clash across a neon-lit Shibuya at night. Gojo fires Reversal Red, the street erupts in an explosion, and the sequence ends on a glowing 'The Honored One' title card."
+          ></canvas>
+          <div class="overlays" id="overlays"></div>
+          <div class="scroll-cue" data-scroll-cue aria-hidden="true">
+            <span>Scroll</span>
+            <i></i>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="credits" id="credits" tabindex="-1">
+      <div class="credits__inner">
+        <p class="credits__eyebrow" data-reveal>Fin</p>
+        <h2 class="credits__title" data-reveal>Stand proud.<br /><em>You're strong.</em></h2>
+        <p class="credits__copy" data-reveal>
+          Fan project. Jujutsu Kaisen belongs to Gege Akutami / MAPPA / Shueisha. Not for commercial use.
+        </p>
+        <p class="credits__copy credits__copy--dim" data-reveal>
+          Animation frames: Cyborg Digital Art (Flova.ai × Seedance 2.5). Built with GSAP, Lenis and a canvas.
+        </p>
+        <button class="button" type="button" data-replay data-reveal>
+          <span>Replay the fight</span>
+          <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M12 19V5m0 0-6 6m6-6 6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+    </footer>
+
+    <div class="fx fx--vignette" aria-hidden="true"></div>
+    <div class="fx fx--grain" aria-hidden="true"></div>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
